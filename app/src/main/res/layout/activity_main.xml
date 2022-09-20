@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTVTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="LOGIN SCREEN"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        />
+    <LinearLayout
+        android:id="@+id/idLLInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/idTVTitle"
+        android:layout_marginTop="100dp"
+        >
+        <TextView
+            android:id="@+id/idTVName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Name Here"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:id="@+id/idEdtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/idBtnLogin"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLLInformation"
+        android:layout_marginTop="50dp"
+        android:text="LOGIN"
+        />
+
+</RelativeLayout>
